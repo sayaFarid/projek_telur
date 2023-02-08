@@ -2,6 +2,7 @@ package com.example.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import androidx.appcompat.app.ActionBar
 
 class MainActivity : AppCompatActivity() {
@@ -9,9 +10,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        if (supportActionBar != null) {
-            (supportActionBar as ActionBar).title = "Google Pixel"
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setLogo(R.drawable.ic_back)
+        supportActionBar?.setDisplayUseLogoEnabled(true)
         }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
     }
-}
+
+    }

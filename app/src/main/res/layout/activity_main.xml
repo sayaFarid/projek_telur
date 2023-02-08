@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,7 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/activity_main"
-    android:background="@android:color/white">
+
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +24,7 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            android:src="@drawable/gambar" />
+            android:src="@drawable/telur" />
 
             <TextView
                 style="@style/TextContent.Small.White"
@@ -42,13 +44,26 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@android:color/white" />
         </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#FFC107" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="#FFC107" />
 
         <TextView
             style="@style/TextContent.Black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="32sp"
-            android:text="$735"
+            android:textSize="30sp"
+            android:text="TELUR REBUS LEK' FARID"
+            android:textStyle="bold"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_marginTop="@dimen/activity_vertical_margin"
@@ -59,114 +74,32 @@
             style="@style/TextContent.Subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Stock hanya 5 buah"
+            android:text="unlimited stock"
+            android:textStyle="italic|bold"
+            android:textColor="@color/colorSubTitle"
             android:textSize="12sp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
-        <TextView
-            style="@style/TextContent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/content_text"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:lineSpacingMultiplier="1"
-            android:textColor="@android:color/black"/>
-
-        <TextView
-            style="@style/TextContent.Subtitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Spesifikasi"
-            android:textSize="12sp"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginBottom="8dp"/>
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginBottom="@dimen/activity_vertical_margin">
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp">
-
-                <TextView
-                    style="@style/TextSpec.Field"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_marginRight="@dimen/activity_vertical_margin"
-                    android:text="Display"/>
-
-                <TextView
-                    style="@style/TextSpec.Value"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_weight="1"
-                    android:text="@string/content_specs_display"
-                    android:textColor="@android:color/black"/>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp">
-
-                <TextView
-                    style="@style/TextSpec.Field"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_marginRight="@dimen/activity_vertical_margin"
-                    android:text="Size"/>
-
-                <TextView
-                    style="@style/TextSpec.Value"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_weight="1"
-                    android:text="@string/content_specs_size"
-                    android:textColor="@android:color/black"/>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp">
-
-                <TextView
-                    style="@style/TextSpec.Field"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_marginRight="@dimen/activity_vertical_margin"
-                    android:text="Battery"/>
-
-                <TextView
-                    style="@style/TextSpec.Value"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_weight="1"
-                    android:text="@string/content_specs_battery"
-                    android:textColor="@android:color/black"/>
-            </TableRow>
-        </TableLayout>
-
+        <View
+            android:layout_width="200sp"
+            android:layout_height="15dp"
+            android:background="#FFC107" />
+        <View
+            android:layout_width="200sp"
+            android:layout_height="7dp"
+            android:background="@color/white" />
+        <View
+            android:layout_width="200sp"
+            android:layout_height="4dp"
+            android:background="#FFC107" />
         <TextView
             style="@style/TextContent.Subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dijual oleh"
+            android:text="owner"
+            android:textStyle="bold"
             android:textSize="12sp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
@@ -179,32 +112,422 @@
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_marginBottom="@dimen/activity_vertical_margin">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:src="@drawable/gambar"
-                android:layout_centerVertical="true"
-                android:id="@+id/profile_image"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"/>
 
-            <TextView
-                style="@style/TextContent"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/profile_image"
-                android:text="Riskha MNJS"
-                android:textColor="@android:color/black"
-                android:layout_centerVertical="true"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="60dp"
+                    android:layout_height="56dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/jengfarid" />
+
+                <TextView
+                    style="@style/TextContent.Subtitle"
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:text="LEK'S FARID"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    style="@style/TextContent.Subtitle"
+                    android:layout_width="253dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:text="doctor specialis healthy food"
+                    android:textColor="@color/colorSubTitle"
+                    android:textStyle="italic" />
+
         </RelativeLayout>
 
-        <Button
-            style="@style/ButtonGeneral"
+
+        <View
+            android:layout_width="100sp"
+            android:layout_height="4dp"
+            android:background="#FFC107" />
+
+        <View
+            android:layout_width="100sp"
+            android:layout_height="15dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            style="@style/TextContent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Beli"
+            android:layout_height="149dp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:lineSpacingMultiplier="1"
+            android:text="@string/content_text"
+            android:textColor="@android:color/black"
+            android:textStyle="italic" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:background="#FFC107" />
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STEP BY STEP"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="8dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+            <View
+                android:layout_width="500dp"
+                android:layout_height="2dp"
+                android:background="#E6BC3D" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:text="1"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:layout_width="316dp"
+                    android:layout_height="114dp"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_display"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="500dp"
+                    android:layout_height="135dp"
+                    android:layout_weight="2"
+                    android:background="#E6BC3D"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="5"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/step1" />
+                </RelativeLayout>
+
+
+            </TableRow>
+            <View
+                android:layout_width="500dp"
+                android:layout_height="2dp"
+                android:background="#E6BC3D" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:text="2"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_size"
+                    android:textColor="@android:color/black"/>
+                <RelativeLayout
+                    android:layout_width="240dp"
+                    android:layout_height="136dp"
+                    android:layout_weight="2"
+                    android:background="#E6BC3D"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="3"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/steo2" />
+                </RelativeLayout>
+            </TableRow>
+            <View
+                android:layout_width="500dp"
+                android:layout_height="2dp"
+                android:background="#E6BC3D" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:text="3"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:layout_width="148dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_battery"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+                <RelativeLayout
+                    android:layout_width="240dp"
+                    android:layout_height="136dp"
+                    android:layout_weight="2"
+                    android:background="#E6BC3D"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="3"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/step3" />
+                </RelativeLayout>
+            </TableRow>
+            <View
+                android:layout_width="500dp"
+                android:layout_height="2dp"
+                android:background="#E6BC3D" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:text="4"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_size_2"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+                <RelativeLayout
+                    android:layout_width="240dp"
+                    android:layout_height="136dp"
+                    android:layout_weight="2"
+                    android:background="#E6BC3D"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="3"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/step4" />
+                </RelativeLayout>
+            </TableRow>
+            <View
+                android:layout_width="500dp"
+                android:layout_height="2dp"
+                android:background="#E6BC3D" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:text="5"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_size_3"
+                    android:textColor="@android:color/black"/>
+                <RelativeLayout
+                    android:layout_width="240dp"
+                    android:layout_height="136dp"
+                    android:layout_weight="2"
+                    android:background="#E6BC3D"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="3"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/step5" />
+                </RelativeLayout>
+            </TableRow>
+            <View
+                android:layout_width="500dp"
+                android:layout_height="2dp"
+                android:background="#E6BC3D" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:text="6"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_size_4"
+                    android:textColor="@android:color/black"/>
+                <RelativeLayout
+                    android:layout_width="240dp"
+                    android:layout_height="136dp"
+                    android:layout_weight="2"
+                    android:background="#E6BC3D"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="3"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/step6" />
+                </RelativeLayout>
+            </TableRow>
+            <View
+                android:layout_width="500dp"
+                android:layout_height="2dp"
+                android:background="#E6BC3D" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:text="7"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_size_5"
+                    android:textColor="@android:color/black"/>
+                <RelativeLayout
+                    android:layout_width="240dp"
+                    android:layout_height="136dp"
+                    android:layout_weight="2"
+                    android:background="#E6BC3D"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="3"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/step7" />
+                </RelativeLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <ImageButton
+            style="@style/btnStyleOrange"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:onClick="klikButton"
+            android:text="ORDER"
+            android:textColor="#FFFFFF" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ORDER"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="45dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </FrameLayout>
 
     </LinearLayout>
 </ScrollView>
